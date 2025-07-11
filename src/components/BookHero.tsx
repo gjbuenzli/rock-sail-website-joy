@@ -49,14 +49,8 @@ export const BookHero = () => {
 
             {/* Book Details */}
             <div className="flex flex-wrap gap-6 text-primary-foreground/80">
-              <div className="flex flex-col">
-                <span className="text-sm font-semibold text-primary-foreground">Published</span>
-                <span>December 2024</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="text-sm font-semibold text-primary-foreground">Genre</span>
-                <span>Adventure Memoir</span>
-              </div>
+              
+              
               <div className="flex flex-col">
                 <span className="text-sm font-semibold text-primary-foreground">Rating</span>
                 <div className="flex items-center gap-1">
