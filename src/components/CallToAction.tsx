@@ -83,7 +83,7 @@ export const CallToAction = () => {
                   <span className="absolute left-0 top-0 overflow-hidden w-[25%] text-yellow-400">⭐</span>
                 </span>
               </div>
-              <div className="text-sm">4.2/5 • 47 ratings</div>
+              <div className="text-sm">4.2/5 • 2329 ratings</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold">1000+</div>
