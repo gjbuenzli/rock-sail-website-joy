@@ -64,7 +64,7 @@ export const BookHero = () => {
                     <span>⭐⭐⭐⭐</span>
                     <span className="relative">
                       <span className="text-primary-foreground/40">☆</span>
-                      <span className="absolute left-0 top-0 overflow-hidden w-[20%] text-yellow-400">⭐</span>
+                      <span className="absolute left-0 top-0 overflow-hidden w-[25%] text-yellow-400">⭐</span>
                     </span>
                   </div>
                   <span className="text-sm">(4.2/5) • 47 ratings</span>
