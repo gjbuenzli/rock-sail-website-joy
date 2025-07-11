@@ -1,10 +1,8 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, ShoppingCart, Download, Gift } from 'lucide-react';
-
 export const CallToAction = () => {
-  return (
-    <section className="py-20 bg-gradient-ocean text-primary-foreground">
+  return <section className="py-20 bg-gradient-ocean text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           
@@ -12,10 +10,7 @@ export const CallToAction = () => {
             <h2 className="text-4xl lg:text-5xl font-bold mb-6">
               Ready for Adventure?
             </h2>
-            <p className="text-xl lg:text-2xl opacity-90 leading-relaxed">
-              Join thousands of readers who've fallen in love with this hilarious sailing saga. 
-              Perfect for anyone who loves adventure, family stories, or just needs a good laugh!
-            </p>
+            <p className="text-xl lg:text-2xl opacity-90 leading-relaxed">Join tens of thousands of readers who've fallen in love with this hilarious sailing saga. Perfect for anyone who loves adventure, family stories, or just needs a good laugh!</p>
           </div>
 
           {/* Purchase Options */}
@@ -30,12 +25,7 @@ export const CallToAction = () => {
                   Perfect for the beach, boat, or cozy reading nook. 
                   Beautiful physical copy to add to your adventure library.
                 </p>
-                <Button 
-                  variant="sunset" 
-                  size="xl" 
-                  className="w-full group"
-                  onClick={() => window.open('https://amzn.to/3U4m4uO', '_blank')}
-                >
+                <Button variant="sunset" size="xl" className="w-full group" onClick={() => window.open('https://amzn.to/3U4m4uO', '_blank')}>
                   <ShoppingCart className="w-5 h-5 group-hover:animate-bounce" />
                   Order Paperback
                   <ExternalLink className="w-4 h-4" />
@@ -52,12 +42,7 @@ export const CallToAction = () => {
                   Start reading instantly! Perfect for travel, 
                   adjustable text size, and available anywhere you go.
                 </p>
-                <Button 
-                  variant="wave" 
-                  size="xl" 
-                  className="w-full group"
-                  onClick={() => window.open('https://amzn.to/3IoEvb9', '_blank')}
-                >
+                <Button variant="wave" size="xl" className="w-full group" onClick={() => window.open('https://amzn.to/3IoEvb9', '_blank')}>
                   <Download className="w-5 h-5 group-hover:animate-bounce" />
                   Get Kindle Edition
                   <ExternalLink className="w-4 h-4" />
@@ -76,21 +61,11 @@ export const CallToAction = () => {
                 This book makes the perfect gift for dreamers and adventurers of all ages.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="border-accent-foreground text-accent-foreground hover:bg-accent-foreground hover:text-accent"
-                  onClick={() => window.open('https://amzn.to/3U4m4uO', '_blank')}
-                >
+                <Button variant="outline" size="lg" className="border-accent-foreground text-accent-foreground hover:bg-accent-foreground hover:text-accent" onClick={() => window.open('https://amzn.to/3U4m4uO', '_blank')}>
                   <Gift className="w-5 h-5" />
                   Gift Paperback
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg"
-                  className="border-accent-foreground text-accent-foreground hover:bg-accent-foreground hover:text-accent"
-                  onClick={() => window.open('https://amzn.to/3IoEvb9', '_blank')}
-                >
+                <Button variant="outline" size="lg" className="border-accent-foreground text-accent-foreground hover:bg-accent-foreground hover:text-accent" onClick={() => window.open('https://amzn.to/3IoEvb9', '_blank')}>
                   <Gift className="w-5 h-5" />
                   Gift Kindle
                 </Button>
@@ -121,6 +96,5 @@ export const CallToAction = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
