@@ -59,7 +59,16 @@ export const BookHero = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-sm font-semibold text-primary-foreground">Rating</span>
-                <span>⭐⭐⭐⭐☆ (4.2/5)</span>
+                <div className="flex items-center gap-1">
+                  <div className="flex">
+                    <span>⭐⭐⭐⭐</span>
+                    <span className="relative">
+                      <span className="text-primary-foreground/40">☆</span>
+                      <span className="absolute left-0 top-0 overflow-hidden w-[20%] text-yellow-400">⭐</span>
+                    </span>
+                  </div>
+                  <span className="text-sm">(4.2/5) • 47 ratings</span>
+                </div>
               </div>
             </div>
           </div>

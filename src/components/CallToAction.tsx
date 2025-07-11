@@ -101,8 +101,14 @@ export const CallToAction = () => {
           {/* Social Proof */}
           <div className="mt-12 flex flex-wrap justify-center items-center gap-8 opacity-80">
             <div className="text-center">
-              <div className="text-2xl font-bold">⭐⭐⭐⭐☆</div>
-              <div className="text-sm">4.2/5 Average Rating</div>
+              <div className="text-2xl font-bold flex justify-center">
+                <span>⭐⭐⭐⭐</span>
+                <span className="relative">
+                  <span className="text-primary-foreground/40">☆</span>
+                  <span className="absolute left-0 top-0 overflow-hidden w-[20%] text-yellow-400">⭐</span>
+                </span>
+              </div>
+              <div className="text-sm">4.2/5 • 47 ratings</div>
             </div>
             <div className="text-center">
               <div className="text-2xl font-bold">1000+</div>
