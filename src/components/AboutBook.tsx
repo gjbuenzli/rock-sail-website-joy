@@ -1,33 +1,25 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Waves, Users, Heart, Navigation } from 'lucide-react';
-
 export const AboutBook = () => {
-  const highlights = [
-    {
-      icon: Waves,
-      title: "Ocean Adventures",
-      description: "Experience the thrill and chaos of life at sea with unexpected encounters and hilarious mishaps."
-    },
-    {
-      icon: Users,
-      title: "Family Journey",
-      description: "Follow a family of five as they navigate the challenges of living together in a small sailboat."
-    },
-    {
-      icon: Heart,
-      title: "Heartwarming Moments",
-      description: "Discover the deep bonds formed when facing the unknown together, pets included!"
-    },
-    {
-      icon: Navigation,
-      title: "True Story",
-      description: "Every wild adventure actually happened - truth is stranger and funnier than fiction."
-    }
-  ];
-
-  return (
-    <section className="py-20 bg-background">
+  const highlights = [{
+    icon: Waves,
+    title: "Ocean Adventures",
+    description: "Experience the thrill and chaos of life at sea with unexpected encounters and hilarious mishaps."
+  }, {
+    icon: Users,
+    title: "Family Journey",
+    description: "Follow a family of five as they navigate the challenges of living together in a small sailboat."
+  }, {
+    icon: Heart,
+    title: "Heartwarming Moments",
+    description: "Discover the deep bonds formed when facing the unknown together, pets included!"
+  }, {
+    icon: Navigation,
+    title: "True Story",
+    description: "Every wild adventure actually happened - truth is stranger and funnier than fiction."
+  }];
+  return <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           
@@ -59,11 +51,7 @@ export const AboutBook = () => {
 
           {/* Highlights Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {highlights.map((highlight, index) => (
-              <Card 
-                key={index} 
-                className="text-center hover:shadow-soft transition-all duration-300 transform hover:-translate-y-2 group"
-              >
+            {highlights.map((highlight, index) => <Card key={index} className="text-center hover:shadow-soft transition-all duration-300 transform hover:-translate-y-2 group">
                 <CardContent className="p-6">
                   <div className="mb-4 flex justify-center">
                     <div className="w-16 h-16 bg-gradient-ocean rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
@@ -79,22 +67,17 @@ export const AboutBook = () => {
                     {highlight.description}
                   </p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           {/* Quote Section */}
           <div className="mt-20 text-center">
-            <blockquote className="text-2xl lg:text-3xl font-medium text-primary italic leading-relaxed max-w-3xl mx-auto">
-              "Paradise isn't just about the destination—it's about the wild, 
-              wonderful, and sometimes ridiculous journey to get there."
-            </blockquote>
+            <blockquote className="text-2xl lg:text-3xl font-medium text-primary italic leading-relaxed max-w-3xl mx-auto">"If everything had gone to plan, it wouldn't have been much of an adventure"</blockquote>
             <cite className="block mt-6 text-muted-foreground text-lg">
               — From "And Then We Hit a Rock"
             </cite>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
