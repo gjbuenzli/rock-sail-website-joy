@@ -86,7 +86,7 @@ export const CallToAction = () => {
               <div className="text-sm">4.2/5 • 2329 ratings</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold">1000+</div>
+              <div className="text-2xl font-bold">25,000+</div>
               <div className="text-sm">Happy Readers</div>
             </div>
             <div className="text-center">
