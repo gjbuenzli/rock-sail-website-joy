@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, ShoppingCart, Download, Anchor } from 'lucide-react';
-import bookCover from '@/assets/book-cover.jpg';
+import bookCover from '@/assets/actual-book-cover.jpg';
 import oceanHero from '@/assets/ocean-hero.jpg';
 
 export const BookHero = () => {
@@ -87,7 +87,7 @@ export const BookHero = () => {
               <img
                 src={bookCover}
                 alt="And Then We Hit a Rock - Book Cover"
-                className="relative w-80 lg:w-96 h-auto rounded-lg shadow-warm transform group-hover:scale-105 transition-transform duration-300 animate-float"
+                className="relative w-80 lg:w-96 h-auto rounded-lg shadow-warm transform group-hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
