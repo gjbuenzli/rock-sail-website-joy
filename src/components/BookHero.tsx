@@ -75,7 +75,7 @@ export const BookHero = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-sm font-semibold text-primary-foreground">Rating</span>
-                <span>⭐⭐⭐⭐⭐ (4.8/5)</span>
+                <span>⭐⭐⭐⭐☆ (4.2/5)</span>
               </div>
             </div>
           </div>
