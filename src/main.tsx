@@ -14,6 +14,10 @@ const router = createBrowserRouter([
         path: "/vite-react-router/",
         element: <Index />,
       },
+      {
+        path: "/rock-sail-website-joy/",
+        element: <Index />,
+      },
     
     ],
   },
