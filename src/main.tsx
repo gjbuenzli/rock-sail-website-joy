@@ -14,10 +14,7 @@ const router = createBrowserRouter([
         path: "/vite-react-router/",
         element: <Index />,
       },
-      {
-        path: "/vite-react-router/contact",
-        element: <Contact />,
-      },
+    
     ],
   },
 ]);
