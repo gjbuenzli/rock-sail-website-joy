@@ -34,4 +34,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           cname: gjbuenzli.github.io
           publish_dir: ./dist
-          publish_branch: gh-pages
