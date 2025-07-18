@@ -50,7 +50,7 @@ export const CallToAction = () => {
                   Get Kindle Edition
                   <ExternalLink className="w-4 h-4" />
                 </Button>
-                <img src="/lovable-uploads/edddcd8b-8f46-41d2-9124-fb5da11b9587.png" alt="Kindle Unlimited" className="h-8 mx-auto opacity-90" />
+                <img src="/lovable-uploads/edddcd8b-8f46-41d2-9124-fb5da11b9587.png" alt="Kindle Unlimited" className="w-full h-8 object-contain opacity-90" />
               </div>
             </div>
           </div>
