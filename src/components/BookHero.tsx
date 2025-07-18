@@ -49,7 +49,7 @@ export const BookHero = () => {
                   Kindle Edition
                   <ExternalLink className="w-4 h-4" />
                 </Button>
-                <img src="/lovable-uploads/edddcd8b-8f46-41d2-9124-fb5da11b9587.png" alt="Kindle Unlimited" className="w-full h-6 object-contain opacity-90" />
+                <img src="/lovable-uploads/ku.png" alt="Kindle Unlimited" className="w-full h-6 object-contain opacity-90" />
               </div>
             </div>
 
