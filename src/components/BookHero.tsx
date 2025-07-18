@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import { ExternalLink, ShoppingCart, Download, Anchor } from 'lucide-react';
 import bookCover from '@/assets/actual-book-cover.jpg';
 import oceanHero from '@/assets/ocean-hero.jpg';
+import kindleUnlimitedLogo from '@/assets/kindle-unlimited-logo.png';
 import { useAmazonLinks } from '@/hooks/useAmazonLinks';
 export const BookHero = () => {
   const { paperbackUrl, kindleUrl } = useAmazonLinks();
@@ -49,8 +50,8 @@ export const BookHero = () => {
                   Kindle Edition
                   <ExternalLink className="w-4 h-4" />
                 </Button>
-                <div className="absolute -top-2 -right-2 bg-accent text-accent-foreground text-xs px-2 py-1 rounded-full font-semibold shadow-md">
-                  FREE on KU
+                <div className="absolute -top-2 -right-2">
+                  <img src={kindleUnlimitedLogo} alt="Kindle Unlimited" className="w-8 h-8 drop-shadow-md" />
                 </div>
               </div>
             </div>

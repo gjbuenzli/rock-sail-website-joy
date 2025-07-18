@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, ShoppingCart, Download, Gift } from 'lucide-react';
 import { useAmazonLinks } from '@/hooks/useAmazonLinks';
+import kindleUnlimitedLogo from '@/assets/kindle-unlimited-logo.png';
 export const CallToAction = () => {
   const { paperbackUrl, kindleUrl } = useAmazonLinks();
   
@@ -38,8 +39,8 @@ export const CallToAction = () => {
 
             {/* Kindle Option */}
             <div className="bg-white/10 backdrop-blur-sm rounded-xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:scale-105 relative">
-              <div className="absolute top-4 right-4 bg-accent text-accent-foreground text-xs px-3 py-1 rounded-full font-semibold">
-                FREE on Kindle Unlimited
+              <div className="absolute top-4 right-4">
+                <img src={kindleUnlimitedLogo} alt="Kindle Unlimited" className="w-12 h-12 drop-shadow-md" />
               </div>
               <div className="text-center">
                 <Download className="w-12 h-12 mx-auto mb-4 text-accent" />
