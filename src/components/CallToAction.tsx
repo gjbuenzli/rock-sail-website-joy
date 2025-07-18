@@ -1,7 +1,10 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, ShoppingCart, Download, Gift } from 'lucide-react';
+import { useAmazonLinks } from '@/hooks/useAmazonLinks';
 export const CallToAction = () => {
+  const { paperbackUrl, kindleUrl } = useAmazonLinks();
+  
   return <section className="py-20 bg-gradient-ocean text-primary-foreground">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -25,7 +28,7 @@ export const CallToAction = () => {
                   Perfect for the beach, boat, or cozy reading nook. 
                   Beautiful physical copy to add to your adventure library.
                 </p>
-                <Button variant="sunset" size="xl" className="w-full group" onClick={() => window.open('https://amzn.to/3U4m4uO', '_blank')}>
+                <Button variant="sunset" size="xl" className="w-full group" onClick={() => window.open(paperbackUrl, '_blank')}>
                   <ShoppingCart className="w-5 h-5 group-hover:animate-bounce" />
                   Order Paperback
                   <ExternalLink className="w-4 h-4" />
@@ -42,7 +45,7 @@ export const CallToAction = () => {
                   Start reading instantly! Perfect for travel, 
                   adjustable text size, and available anywhere you go.
                 </p>
-                <Button variant="wave" size="xl" className="w-full group" onClick={() => window.open('https://amzn.to/3IoEvb9', '_blank')}>
+                <Button variant="wave" size="xl" className="w-full group" onClick={() => window.open(kindleUrl, '_blank')}>
                   <Download className="w-5 h-5 group-hover:animate-bounce" />
                   Get Kindle Edition
                   <ExternalLink className="w-4 h-4" />
@@ -61,11 +64,11 @@ export const CallToAction = () => {
                 This book makes the perfect gift for dreamers and adventurers of all ages.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="outline" size="lg" className="border-accent-foreground text-accent-foreground hover:bg-accent-foreground hover:text-accent" onClick={() => window.open('https://amzn.to/3U4m4uO', '_blank')}>
+                <Button variant="outline" size="lg" className="border-accent-foreground text-accent-foreground hover:bg-accent-foreground hover:text-accent" onClick={() => window.open(paperbackUrl, '_blank')}>
                   <Gift className="w-5 h-5" />
                   Gift Paperback
                 </Button>
-                <Button variant="outline" size="lg" className="border-accent-foreground text-accent-foreground hover:bg-accent-foreground hover:text-accent" onClick={() => window.open('https://amzn.to/3IoEvb9', '_blank')}>
+                <Button variant="outline" size="lg" className="border-accent-foreground text-accent-foreground hover:bg-accent-foreground hover:text-accent" onClick={() => window.open(kindleUrl, '_blank')}>
                   <Gift className="w-5 h-5" />
                   Gift Kindle
                 </Button>

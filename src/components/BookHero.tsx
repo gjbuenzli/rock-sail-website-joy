@@ -3,7 +3,10 @@ import { Button } from '@/components/ui/button';
 import { ExternalLink, ShoppingCart, Download, Anchor } from 'lucide-react';
 import bookCover from '@/assets/actual-book-cover.jpg';
 import oceanHero from '@/assets/ocean-hero.jpg';
+import { useAmazonLinks } from '@/hooks/useAmazonLinks';
 export const BookHero = () => {
+  const { paperbackUrl, kindleUrl } = useAmazonLinks();
+  
   return <section className="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat" style={{
     backgroundImage: `url(${oceanHero})`
   }}>
@@ -34,13 +37,13 @@ export const BookHero = () => {
 
             {/* Purchase Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="sunset" size="xl" className="group" onClick={() => window.open('https://amzn.to/3U4m4uO', '_blank')}>
+              <Button variant="sunset" size="xl" className="group" onClick={() => window.open(paperbackUrl, '_blank')}>
                 <ShoppingCart className="w-5 h-5 group-hover:animate-bounce" />
                 Buy Paperback
                 <ExternalLink className="w-4 h-4" />
               </Button>
               
-              <Button variant="wave" size="xl" className="group" onClick={() => window.open('https://amzn.to/3IoEvb9', '_blank')}>
+              <Button variant="wave" size="xl" className="group" onClick={() => window.open(kindleUrl, '_blank')}>
                 <Download className="w-5 h-5 group-hover:animate-bounce" />
                 Kindle Edition
                 <ExternalLink className="w-4 h-4" />
