@@ -43,11 +43,16 @@ export const BookHero = () => {
                 <ExternalLink className="w-4 h-4" />
               </Button>
               
-              <Button variant="wave" size="xl" className="group" onClick={() => window.open(kindleUrl, '_blank')}>
-                <Download className="w-5 h-5 group-hover:animate-bounce" />
-                Kindle Edition
-                <ExternalLink className="w-4 h-4" />
-              </Button>
+              <div className="relative">
+                <Button variant="wave" size="xl" className="group" onClick={() => window.open(kindleUrl, '_blank')}>
+                  <Download className="w-5 h-5 group-hover:animate-bounce" />
+                  Kindle Edition
+                  <ExternalLink className="w-4 h-4" />
+                </Button>
+                <div className="absolute -top-2 -right-2 bg-accent text-accent-foreground text-xs px-2 py-1 rounded-full font-semibold shadow-md">
+                  FREE on KU
+                </div>
+              </div>
             </div>
 
             {/* Book Details */}
